@@ -1,0 +1,73 @@
+/* ===== Global App Styling ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* ===== Main Layout ===== */
+.main-content {
+  min-height: 100vh;
+  padding-top: 80px; /* offset for sticky navbar */
+  background: linear-gradient(160deg, #1a1a2e, #16213e, #0f3460);
+  transition: all 0.3s ease;
+}
+
+/* ===== Scrollbar Customization ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff3366, #ffcc70);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ffcc70, #ff3366);
+}
+
+/* ===== Page Transitions ===== */
+.main-content {
+  animation: fadePage 0.4s ease;
+}
+
+@keyframes fadePage {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Utility Classes ===== */
+.center-text {
+  text-align: center;
+}
+
+.highlight {
+  color: #ffcc70;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 70px;
+  }
+}

@@ -1,0 +1,93 @@
+/* ===== Home Page Styling ===== */
+.home {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Search Form ===== */
+.Search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Search-input {
+  width: 300px;
+  max-width: 90%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+  background: #fff;
+  color: #333;
+  transition: 0.3s ease;
+}
+
+.Search-input:focus {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+}
+
+.Search-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background: #ff4b2b;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.Search-btn:hover {
+  background: #ff416c;
+  transform: scale(1.05);
+}
+
+/* ===== Loading & Error ===== */
+.loading,
+.error-message {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* ===== Movie Grid ===== */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+/* ===== Movie Card (optional if not in MovieCard.css) ===== */
+.movie-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movie-card h3 {
+  margin: 10px 0 0;
+  font-size: 1rem;
+}

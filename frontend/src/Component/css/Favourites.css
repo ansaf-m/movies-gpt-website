@@ -1,0 +1,31 @@
+/* ===== Favourites Page Styling ===== */
+
+.favourites-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #2c5364);
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px;
+}
+
+/* Title text styling */
+.fav-title {
+  text-align: center;
+  color: red;
+  font-size: 2rem;
+  text-shadow: 0px 0px 10px rgba(255, 0, 0, 0.7);
+  margin-bottom: 10px;
+}
+
+/* Subtitle below title */
+.fav-subtitle {
+  text-align: center;
+  color: rgb(201, 186, 186);
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  text-shadow: 0px 0px 8px rgba(228, 221, 221, 0.6);
+}
+

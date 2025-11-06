@@ -1,0 +1,84 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Root Background ===== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* ===== App Root Container ===== */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(160deg, #1a1a2e, #16213e, #0f3460);
+}
+
+/* ===== Smooth Transitions for UI Elements ===== */
+a, button, input {
+  transition: all 0.3s ease;
+}
+
+/* ===== Remove Default Link Styles ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Button Focus Glow ===== */
+button:focus, input:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(255, 204, 112, 0.5);
+}
+
+/* ===== Fade Animation for Route Changes ===== */
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* ===== Selection Highlight ===== */
+::selection {
+  background: #ff3366;
+  color: #fff;
+}
+
+/* ===== Scrollbar Styling ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff3366, #ffcc70);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ffcc70, #ff3366);
+}
+
+/* ===== Responsive Base Font ===== */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+}
